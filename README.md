@@ -3,7 +3,7 @@
 ## Docker Compose Commands
 
 ```
-// creates and starts all containers within the docker-compose.yml
+// creates and starts all containers within the docker-compose.yml.
 docker compose up
 ```
 
