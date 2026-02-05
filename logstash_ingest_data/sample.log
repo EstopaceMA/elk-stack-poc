@@ -1,0 +1,25 @@
+2026-02-06 04:20:00 INFO [app-server] Application started successfully
+2026-02-06 04:20:05 INFO [auth] User login user_id=1001 username=john.doe ip=192.168.1.100
+2026-02-06 04:20:10 DEBUG [api] Processing request method=GET path=/api/users
+2026-02-06 04:20:12 INFO [api] Request completed status=200 duration_ms=45
+2026-02-06 04:20:15 WARN [monitoring] High memory usage detected usage_percent=85
+2026-02-06 04:20:20 INFO [app-server] User action user_id=1001 action=view_dashboard
+2026-02-06 04:20:25 ERROR [database] Database connection timeout host=db.example.com port=5432
+2026-02-06 04:20:30 INFO [database] Retry attempt for database connection attempt=1
+2026-02-06 04:20:35 INFO [database] Database connection restored
+2026-02-06 04:20:40 INFO [auth] User logout user_id=1001 username=john.doe
+2026-02-06 04:21:00 INFO [auth] New user registration user_id=1002 username=jane.smith email=jane@example.com
+2026-02-06 04:21:05 DEBUG [cache] Cache hit cache_key=user_profile_1002
+2026-02-06 04:21:10 INFO [payments] Payment processed order_id=ORD-2026-001 amount=99.99 currency=USD
+2026-02-06 04:21:15 INFO [notifications] Email sent recipient=jane@example.com subject=Welcome
+2026-02-06 04:21:20 WARN [api] Rate limit approaching api_key=ak_123 requests=950 limit=1000
+2026-02-06 04:25:00 INFO [auth] New session started user_id=1003 username=mike.wilson ip=192.168.1.105
+2026-02-06 04:25:05 INFO [api] API request method=POST path=/api/orders status=201 duration_ms=120
+2026-02-06 04:25:10 ERROR [payments] Payment failed order_id=ORD-2026-002 amount=150.00 currency=USD error_code=CARD_DECLINED
+2026-02-06 04:25:15 WARN [monitoring] Disk space low usage_percent=92 disk=/dev/sda1
+2026-02-06 04:25:20 INFO [backup] Backup completed backup_id=BKP-001 size_mb=512
+2026-02-06 04:30:00 INFO [auth] User login user_id=1002 username=jane.smith ip=192.168.1.110
+2026-02-06 04:30:05 INFO [app-server] Profile updated user_id=1002 username=jane.smith field=email
+2026-02-06 04:30:10 DEBUG [cache] Cache invalidated cache_key=user_profile_1002
+2026-02-06 04:30:15 INFO [orders] Order placed order_id=ORD-2026-003 user_id=1002 username=jane.smith amount=249.99 currency=USD
+2026-02-06 04:30:20 INFO [payments] Payment processed order_id=ORD-2026-003 amount=249.99 currency=USD
